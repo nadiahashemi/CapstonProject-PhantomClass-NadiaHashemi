@@ -1,0 +1,23 @@
+2023-02-26 12:10:39,704 [main] INFO logger_File - user is on retail website
+2023-02-26 12:20:18,765 [main] INFO logger_File - user is on retail website
+2023-02-26 12:20:18,783 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-02-26 12:20:19,427 [main] INFO logger_File - User clicked on Sign in Option
+2023-02-26 12:20:21,067 [main] INFO logger_File - user entered email phantom.test@gmail.com and password Tek@12345
+2023-02-26 12:20:21,351 [main] INFO logger_File - user clicked on login button
+2023-02-26 21:24:06,811 [main] INFO logger_File - user is on retail website
+2023-02-26 21:24:06,858 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-02-26 21:24:07,168 [main] INFO logger_File - User clicked on Sign in Option
+2023-02-26 21:38:13,442 [main] INFO logger_File - user is on retail website
+2023-02-26 21:38:13,455 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-02-26 21:38:13,842 [main] INFO logger_File - User clicked on Sign in Option
+2023-02-26 21:41:37,020 [main] INFO logger_File - user is on retail website
+2023-02-26 21:41:37,029 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-02-26 21:41:37,404 [main] INFO logger_File - User clicked on Sign in Option
+2023-02-26 21:52:48,177 [main] INFO logger_File - user is on retail website
+2023-02-26 21:52:48,201 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-02-26 21:54:07,510 [main] INFO logger_File - user is on retail website
+2023-02-26 21:54:07,524 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-02-26 21:58:18,125 [main] INFO logger_File - user is on retail website
+2023-02-26 21:58:18,137 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-02-26 22:17:05,791 [main] INFO logger_File - user is on retail website
+2023-02-26 22:17:05,812 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App

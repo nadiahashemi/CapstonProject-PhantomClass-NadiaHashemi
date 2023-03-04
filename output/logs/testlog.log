@@ -1,0 +1,23 @@
+2023-02-26 12:10:39,704 - logger_File -INFO - user is on retail website
+2023-02-26 12:20:18,765 - logger_File -INFO - user is on retail website
+2023-02-26 12:20:18,783 - logger_File -INFO - Actual Title React App Equals  ExpectedTitle React App
+2023-02-26 12:20:19,427 - logger_File -INFO - User clicked on Sign in Option
+2023-02-26 12:20:21,067 - logger_File -INFO - user entered email phantom.test@gmail.com and password Tek@12345
+2023-02-26 12:20:21,351 - logger_File -INFO - user clicked on login button
+2023-02-26 21:24:06,811 - logger_File -INFO - user is on retail website
+2023-02-26 21:24:06,858 - logger_File -INFO - Actual Title React App Equals  ExpectedTitle React App
+2023-02-26 21:24:07,168 - logger_File -INFO - User clicked on Sign in Option
+2023-02-26 21:38:13,442 - logger_File -INFO - user is on retail website
+2023-02-26 21:38:13,455 - logger_File -INFO - Actual Title React App Equals  ExpectedTitle React App
+2023-02-26 21:38:13,842 - logger_File -INFO - User clicked on Sign in Option
+2023-02-26 21:41:37,020 - logger_File -INFO - user is on retail website
+2023-02-26 21:41:37,029 - logger_File -INFO - Actual Title React App Equals  ExpectedTitle React App
+2023-02-26 21:41:37,404 - logger_File -INFO - User clicked on Sign in Option
+2023-02-26 21:52:48,177 - logger_File -INFO - user is on retail website
+2023-02-26 21:52:48,201 - logger_File -INFO - Actual Title React App Equals  ExpectedTitle React App
+2023-02-26 21:54:07,510 - logger_File -INFO - user is on retail website
+2023-02-26 21:54:07,524 - logger_File -INFO - Actual Title React App Equals  ExpectedTitle React App
+2023-02-26 21:58:18,125 - logger_File -INFO - user is on retail website
+2023-02-26 21:58:18,137 - logger_File -INFO - Actual Title React App Equals  ExpectedTitle React App
+2023-02-26 22:17:05,791 - logger_File -INFO - user is on retail website
+2023-02-26 22:17:05,812 - logger_File -INFO - Actual Title React App Equals  ExpectedTitle React App
