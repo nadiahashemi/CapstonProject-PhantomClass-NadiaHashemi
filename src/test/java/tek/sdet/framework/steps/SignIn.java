@@ -16,7 +16,7 @@ import tek.sdet.framework.utilities.DataGeneratorUtility;
 public class SignIn extends CommonUtility {
 	POMFactory factory = new POMFactory();
 
-	@When("user click on signin option")
+	@When("User click on Sign in option")
 	public void userClickOnSigninOption() {
 		click(factory.homePage().signInButton);
 		logger.info("user clicked on sign in button");
@@ -61,6 +61,7 @@ public class SignIn extends CommonUtility {
 	}
 	@Then("User should be logged into account page")
 	public void userShouldBeLoggedIntoAccountPage() {
+		waitTillPresence(factory.AccountPage().profileImg);
 		Assert.assertTrue(isElementDisplayed(factory.AccountPage().profileImg));
 		logger.info("user logged into account");
 	  

@@ -1,6 +1,9 @@
 package tek.sdet.framework.steps;
 
+import org.junit.Assert;
+
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import tek.sdet.framework.pages.POMFactory;
 import tek.sdet.framework.utilities.CommonUtility;
@@ -25,5 +28,11 @@ public class AccountTests extends CommonUtility {
 		click(factory.AccountPage().personaUpdateBtn);
 		logger.info("User clicked on update button");
 	}
+	@Then ("user profile information should be updated")
+	public void PersonalInfoUpdated() {
+		waitTillPresence(factory.AccountPage().UpdateUserOptionPresent);
+		Assert.assertTrue(isElementDisplayed(factory.AccountPage().UpdateUserOptionPresent));
+	}
+	
 	
 }

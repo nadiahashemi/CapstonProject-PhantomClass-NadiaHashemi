@@ -1,9 +1,9 @@
 @CompleteTest
 Feature: TEK Retail Application SignIn feature
 
-  Background: 
-    Given User is on retail website
-    When User click on Sign in option
+  #Background: 
+   # Given User is on retail website
+    #When User click on Sign in option
 
   
   Scenario: Verify user can sign in into Retail Application
@@ -23,9 +23,11 @@ Feature: TEK Retail Application SignIn feature
 
   @dryRun  @SmokeTest    @Regression   @Register
   Scenario: Verify user can create an account into Retail Website
+  Given User is on retail website
+    When User click on Sign in option
     And User click on Create New Account button
     And User fill the signUp information with below data
       | name    | email                  | password   | confirmPassword |
-      | Nadia | nadihashemi7@gmail.com | Nadih@1234 | Nadih@1234      |
+      | Nadia | hasheminegin10@gmail.com | Nadih@1234 | Nadih@1234      |
     And User click on SignUp button
     Then User should be logged into account page

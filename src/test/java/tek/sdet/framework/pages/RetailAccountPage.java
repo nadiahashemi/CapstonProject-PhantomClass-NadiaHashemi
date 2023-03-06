@@ -25,6 +25,6 @@ public class RetailAccountPage extends BaseSetup{
 	@FindBy(xpath = "//button[@id='personalUpdateBtn']")
 	public WebElement personaUpdateBtn;
 	
-	@FindBy(xpath = "//div[@class='Toastify']")
+	@FindBy(xpath = "//div[text()='Personal Information Updated Successfully']")
 	public WebElement UpdateUserOptionPresent;
 }
