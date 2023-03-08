@@ -28,6 +28,6 @@ Feature: TEK Retail Application SignIn feature
     And User click on Create New Account button
     And User fill the signUp information with below data
       | name    | email                  | password   | confirmPassword |
-      | Nadia | hasheminegin10@gmail.com | Nadih@1234 | Nadih@1234      |
+      | Nadia | hasheminegin17@gmail.com | Nadih@1234 | Nadih@1234      |
     And User click on SignUp button
     Then User should be logged into account page

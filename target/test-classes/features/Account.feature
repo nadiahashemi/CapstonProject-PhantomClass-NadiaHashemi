@@ -11,6 +11,6 @@ And User should be logged in into Account
 
 Scenario: Verify User can update Profile Information
 When User click on Account option
-And User update Name 'Nadiaaaa' and Phone '0613840898'
+And User update Name 'Nadiaaaaa' and Phone '0613840897'
 And User click on Update button
 Then user profile information should be updated
