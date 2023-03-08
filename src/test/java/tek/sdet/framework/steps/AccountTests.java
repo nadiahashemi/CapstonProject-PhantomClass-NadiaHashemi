@@ -14,15 +14,18 @@ public class AccountTests extends CommonUtility {
 		
 	@When("User click on Account option")
 	public void UserClickedAccount() {
-		click(factory.AccountPage().AccountBtn);
+		click(factory.AccountPage().accountBtn);
 		logger.info("User clicked on account option");
 	}
 	@And("User update Name {string} and Phone {string}")
-	public void UserUpdateInfo(String NameValue, String PhoneValue) {
-		sendText(factory.AccountPage().Name, NameValue);
-		sendText(factory.AccountPage().PhoneInput, PhoneValue);
-		logger.info("user updated"+ NameValue + "and"+ PhoneValue);
+	public void UserUpdateNameAndPhone(String Name, String Phone) {
+		clear(factory.AccountPage().name);
+	    sendText(factory.AccountPage().name, Name);
+	    clear(factory.AccountPage().phoneInput);
+	    sendText(factory.AccountPage().phoneInput,Phone);
+	    logger.info(" User updated "+ Name + " and phone number "+ Phone);    
 	}
+	
 	@And("User click on Update button")
 	public void UserClickUpdateBtn() {
 		click(factory.AccountPage().personaUpdateBtn);
@@ -30,8 +33,8 @@ public class AccountTests extends CommonUtility {
 	}
 	@Then ("user profile information should be updated")
 	public void PersonalInfoUpdated() {
-		waitTillPresence(factory.AccountPage().UpdateUserOptionPresent);
-		Assert.assertTrue(isElementDisplayed(factory.AccountPage().UpdateUserOptionPresent));
+		waitTillPresence(factory.AccountPage().updateUserOptionPresent);
+		Assert.assertTrue(isElementDisplayed(factory.AccountPage().updateUserOptionPresent));
 	}
 	
 	

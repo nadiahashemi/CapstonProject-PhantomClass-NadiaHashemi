@@ -14,17 +14,17 @@ public class RetailAccountPage extends BaseSetup{
 	public WebElement profileImg;
 	
 	@FindBy(xpath = "//a[@id='accountLink']")
-	public WebElement AccountBtn;
+	public WebElement accountBtn;
 	
 	@FindBy(xpath = "//input[@id='nameInput']")
-	public WebElement Name;
+	public WebElement name;
 	
 	@FindBy(xpath = "//input[@id='personalPhoneInput']")
-	public WebElement PhoneInput;
+	public WebElement phoneInput;
 	
 	@FindBy(xpath = "//button[@id='personalUpdateBtn']")
 	public WebElement personaUpdateBtn;
 	
 	@FindBy(xpath = "//div[text()='Personal Information Updated Successfully']")
-	public WebElement UpdateUserOptionPresent;
+	public WebElement updateUserOptionPresent;
 }

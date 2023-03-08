@@ -124,3 +124,69 @@
 2023-03-06 06:33:09,700 [main] INFO logger_File - user entred information for signin up
 2023-03-06 06:33:09,870 [main] INFO logger_File - user clicked on sign up button
 2023-03-06 06:33:10,288 [main] INFO logger_File - user logged into account
+2023-03-07 06:09:59,179 [main] INFO logger_File - user is on retail website
+2023-03-07 06:09:59,204 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-07 06:09:59,689 [main] INFO logger_File - user clicked on sign in button
+2023-03-07 06:10:00,334 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@1234
+2023-03-07 06:10:00,496 [main] INFO logger_File - user clicked on login button
+2023-03-07 06:10:01,180 [main] INFO logger_File - User clicked on account option
+2023-03-07 06:22:30,270 [main] INFO logger_File - user is on retail website
+2023-03-07 06:22:30,279 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-07 06:22:30,825 [main] INFO logger_File - user clicked on sign in button
+2023-03-07 06:22:31,463 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@1234
+2023-03-07 06:22:31,636 [main] INFO logger_File - user clicked on login button
+2023-03-07 06:22:32,338 [main] INFO logger_File - User clicked on account option
+2023-03-07 22:15:42,863 [main] INFO logger_File - user is on retail website
+2023-03-07 22:15:42,922 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-07 22:15:43,317 [main] INFO logger_File - user clicked on sign in button
+2023-03-07 22:15:44,003 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@1234
+2023-03-07 22:15:44,164 [main] INFO logger_File - user clicked on login button
+2023-03-07 22:15:44,772 [main] INFO logger_File - User clicked on account option
+2023-03-07 22:15:45,151 [main] INFO logger_File - User updatedNadiaaand phone number061384089012
+2023-03-07 22:15:45,305 [main] INFO logger_File - User clicked on update button
+2023-03-07 22:22:38,118 [main] INFO logger_File - user is on retail website
+2023-03-07 22:22:38,139 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-07 22:22:38,494 [main] INFO logger_File - user clicked on sign in button
+2023-03-07 22:22:39,672 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@1234
+2023-03-07 22:22:39,852 [main] INFO logger_File - user clicked on login button
+2023-03-07 22:22:40,404 [main] INFO logger_File - User clicked on account option
+2023-03-07 22:22:40,752 [main] INFO logger_File - User updatedNadiaaand phone number061384089012
+2023-03-07 22:22:40,949 [main] INFO logger_File - User clicked on update button
+2023-03-07 22:50:25,525 [main] INFO logger_File - user is on retail website
+2023-03-07 22:50:25,541 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-07 22:50:26,319 [main] INFO logger_File - user clicked on sign in button
+2023-03-07 22:50:27,655 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@1234
+2023-03-07 22:50:28,288 [main] INFO logger_File - user clicked on login button
+2023-03-07 22:50:29,337 [main] INFO logger_File - User clicked on account option
+2023-03-07 22:50:30,698 [main] INFO logger_File -  User updated Nadiaa and phone number 061384089012
+2023-03-07 22:50:31,171 [main] INFO logger_File - User clicked on update button
+2023-03-07 22:52:30,864 [main] INFO logger_File - user is on retail website
+2023-03-07 22:52:30,882 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-07 22:52:31,725 [main] INFO logger_File - user clicked on sign in button
+2023-03-07 22:52:33,431 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@1234
+2023-03-07 22:52:34,039 [main] INFO logger_File - user clicked on login button
+2023-03-07 22:52:35,501 [main] INFO logger_File - User clicked on account option
+2023-03-07 22:52:37,179 [main] INFO logger_File -  User updated Nadiaa and phone number 061384089012
+2023-03-07 22:55:07,782 [main] INFO logger_File - user is on retail website
+2023-03-07 22:55:07,871 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-07 22:55:08,432 [main] INFO logger_File - user clicked on sign in button
+2023-03-07 22:55:09,876 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@1234
+2023-03-07 22:55:10,237 [main] INFO logger_File - user clicked on login button
+2023-03-07 22:55:11,777 [main] INFO logger_File - User clicked on account option
+2023-03-07 22:55:13,123 [main] INFO logger_File -  User updated Nadiaaa and phone number 0613840890
+2023-03-07 22:55:13,428 [main] INFO logger_File - User clicked on update button
+2023-03-07 23:12:36,714 [main] INFO logger_File - user is on retail website
+2023-03-07 23:12:36,731 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-07 23:12:37,116 [main] INFO logger_File - user clicked on sign in button
+2023-03-07 23:12:37,760 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@1234
+2023-03-07 23:12:37,945 [main] INFO logger_File - user clicked on login button
+2023-03-07 23:12:38,560 [main] INFO logger_File - User clicked on account option
+2023-03-07 23:12:39,205 [main] INFO logger_File -  User updated Nadiaaa and phone number 0613840890
+2023-03-07 23:13:35,185 [main] INFO logger_File - user is on retail website
+2023-03-07 23:13:35,199 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-07 23:13:35,705 [main] INFO logger_File - user clicked on sign in button
+2023-03-07 23:13:36,268 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@1234
+2023-03-07 23:13:36,449 [main] INFO logger_File - user clicked on login button
+2023-03-07 23:13:37,124 [main] INFO logger_File - User clicked on account option
+2023-03-07 23:13:37,781 [main] INFO logger_File -  User updated Nadiaaaa and phone number 0613840898
+2023-03-07 23:13:37,960 [main] INFO logger_File - User clicked on update button
