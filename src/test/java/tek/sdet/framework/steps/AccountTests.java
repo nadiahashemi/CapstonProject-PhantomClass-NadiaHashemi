@@ -1,5 +1,8 @@
 package tek.sdet.framework.steps;
 
+import java.util.List;
+import java.util.Map;
+
 import org.junit.Assert;
 
 import io.cucumber.java.en.And;
@@ -36,6 +39,25 @@ public class AccountTests extends CommonUtility {
 		waitTillPresence(factory.AccountPage().updateUserOptionPresent);
 		Assert.assertTrue(isElementDisplayed(factory.AccountPage().updateUserOptionPresent));
 	}
-	
+	@When("User enter below information")
+	public void userEnterBelowInfo(io.cucumber.datatable.DataTable datatable) {
+		List<Map<String,String>> data = datatable.asMaps(String.class, String.class);
+		sendText(factory.AccountPage().pervPass, data.get(0).get("previousPassword"));
+		sendText(factory.AccountPage().newPass, data.get(0).get("newPassword"));
+		sendText(factory.AccountPage().confirmPass, data.get(0).get("confirmPassword"));
+		logger.info("User Updated his/her Password");
+	}
+	@When("User click on Change Password button")
+	public void userClickOnChangePasswordButton() {
+	   click(factory.AccountPage().changePassBtn);
+	   logger.info("user clicked on change password button");
+	}
+	@Then("a message should be displayed {string}")
+	public void aMessageShouldBeDisplayed(String string) {
+	 waitTillPresence(factory.AccountPage().passUpdatedSuccessfully);
+	 Assert.assertTrue(isElementDisplayed(factory.AccountPage().passUpdatedSuccessfully));
+	 logger.info("A successfully updated password message is displayed");
+	}
+
 	
 }

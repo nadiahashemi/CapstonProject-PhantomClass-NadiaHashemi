@@ -190,3 +190,22 @@
 2023-03-07 23:13:37,124 - logger_File -INFO - User clicked on account option
 2023-03-07 23:13:37,781 - logger_File -INFO -  User updated Nadiaaaa and phone number 0613840898
 2023-03-07 23:13:37,960 - logger_File -INFO - User clicked on update button
+2023-03-09 21:00:25,356 - logger_File -INFO - user is on retail website
+2023-03-09 21:00:25,364 - logger_File -INFO - Actual Title React App Equals  ExpectedTitle React App
+2023-03-09 21:00:25,611 - logger_File -INFO - user clicked on sign in button
+2023-03-09 21:00:26,326 - logger_File -INFO - user entered email nadihashemih@gmail.com and password Nadih@1234
+2023-03-09 21:00:26,550 - logger_File -INFO - user clicked on login button
+2023-03-09 21:00:27,146 - logger_File -INFO - User clicked on account option
+2023-03-09 21:00:27,283 - logger_File -INFO - User clicked on account option
+2023-03-09 21:00:27,882 - logger_File -INFO -  User updated Nadiaaaaa and phone number 0613840897
+2023-03-09 21:00:28,103 - logger_File -INFO - User clicked on update button
+2023-03-09 21:00:33,281 - logger_File -INFO - user is on retail website
+2023-03-09 21:00:33,282 - logger_File -INFO - Actual Title React App Equals  ExpectedTitle React App
+2023-03-09 21:00:33,737 - logger_File -INFO - user clicked on sign in button
+2023-03-09 21:00:34,223 - logger_File -INFO - user entered email nadihashemih@gmail.com and password Nadih@1234
+2023-03-09 21:00:34,362 - logger_File -INFO - user clicked on login button
+2023-03-09 21:00:34,901 - logger_File -INFO - User clicked on account option
+2023-03-09 21:00:35,167 - logger_File -INFO - User clicked on account option
+2023-03-09 21:00:35,692 - logger_File -INFO - User Updated his/her Password
+2023-03-09 21:00:35,820 - logger_File -INFO - user clicked on change password button
+2023-03-09 21:00:36,866 - logger_File -INFO - A successfully updated password message is displayed
