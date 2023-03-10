@@ -49,7 +49,7 @@ public class AccountTests extends CommonUtility {
 	}
 	@When("User click on Change Password button")
 	public void userClickOnChangePasswordButton() {
-	   click(factory.AccountPage().changePassBtn);
+	   click(factory.AccountPage().changePassBtn); 
 	   logger.info("user clicked on change password button");
 	}
 	@Then("a message should be displayed {string}")
