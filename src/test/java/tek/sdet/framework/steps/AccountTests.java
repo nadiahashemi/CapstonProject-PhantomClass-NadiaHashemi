@@ -13,51 +13,146 @@ import tek.sdet.framework.utilities.CommonUtility;
 
 public class AccountTests extends CommonUtility {
 
-	POMFactory factory = new POMFactory(); 
-		
+	POMFactory factory = new POMFactory();
+
 	@When("User click on Account option")
 	public void UserClickedAccount() {
 		click(factory.AccountPage().accountBtn);
 		logger.info("User clicked on account option");
 	}
+
 	@And("User update Name {string} and Phone {string}")
 	public void UserUpdateNameAndPhone(String Name, String Phone) {
 		clear(factory.AccountPage().name);
-	    sendText(factory.AccountPage().name, Name);
-	    clear(factory.AccountPage().phoneInput);
-	    sendText(factory.AccountPage().phoneInput,Phone);
-	    logger.info(" User updated "+ Name + " and phone number "+ Phone);    
+		sendText(factory.AccountPage().name, Name);
+		clear(factory.AccountPage().phoneInput);
+		sendText(factory.AccountPage().phoneInput, Phone);
+		logger.info(" User updated " + Name + " and phone number " + Phone);
 	}
-	
+
 	@And("User click on Update button")
 	public void UserClickUpdateBtn() {
 		click(factory.AccountPage().personaUpdateBtn);
 		logger.info("User clicked on update button");
 	}
-	@Then ("user profile information should be updated")
+
+	@Then("user profile information should be updated")
 	public void PersonalInfoUpdated() {
 		waitTillPresence(factory.AccountPage().updateUserOptionPresent);
 		Assert.assertTrue(isElementDisplayed(factory.AccountPage().updateUserOptionPresent));
 	}
+
 	@When("User enter below information")
 	public void userEnterBelowInfo(io.cucumber.datatable.DataTable datatable) {
-		List<Map<String,String>> data = datatable.asMaps(String.class, String.class);
+		List<Map<String, String>> data = datatable.asMaps(String.class, String.class);
 		sendText(factory.AccountPage().pervPass, data.get(0).get("previousPassword"));
 		sendText(factory.AccountPage().newPass, data.get(0).get("newPassword"));
 		sendText(factory.AccountPage().confirmPass, data.get(0).get("confirmPassword"));
 		logger.info("User Updated his/her Password");
 	}
+
 	@When("User click on Change Password button")
 	public void userClickOnChangePasswordButton() {
-	   click(factory.AccountPage().changePassBtn); 
-	   logger.info("user clicked on change password button");
-	}
-	@Then("a message should be displayed {string}")
-	public void aMessageShouldBeDisplayed(String string) {
-	 waitTillPresence(factory.AccountPage().passUpdatedSuccessfully);
-	 Assert.assertTrue(isElementDisplayed(factory.AccountPage().passUpdatedSuccessfully));
-	 logger.info("A successfully updated password message is displayed");
+		click(factory.AccountPage().changePassBtn);
+		logger.info("user clicked on change password button");
 	}
 
-	
+	@Then("a message should be displayed {string}")
+	public void aMessageShouldBeDisplayed(String string) {
+		waitTillPresence(factory.AccountPage().passUpdatedSuccessfully);
+		Assert.assertTrue(isElementDisplayed(factory.AccountPage().passUpdatedSuccessfully));
+		logger.info("A successfully updated password message is displayed");
+	}
+
+	@And("User click on Add a payment method link")
+	public void userClickOnAddAPaymentMethodLink() {
+		click(factory.AccountPage().addPaymentMethod);
+		logger.info("user clicked on add payment method");
+	}
+
+	@And("User fill Debit or credit card information")
+	public void userFillDebitOrCreditCardInformation(io.cucumber.datatable.DataTable dataTable) {
+		List<Map<String, String>> info = dataTable.asMaps(String.class, String.class);
+		sendText(factory.AccountPage().cardNumber, info.get(0).get("cardNumber"));
+		sendText(factory.AccountPage().nameOnCard, info.get(0).get("nameOnCard"));
+		selectByValue(factory.AccountPage().expirationMonth, info.get(0).get("expirationMonth"));
+		selectByValue(factory.AccountPage().expirationYear, info.get(0).get("expirationYear"));
+		sendText(factory.AccountPage().securityCode, info.get(0).get("securityCode"));
+		logger.info("User entred card information");
+	}
+
+	@And("User click on Add your card button")
+	public void userClickOnAddYourCardButton() {
+		click(factory.AccountPage().paymentButton);
+		logger.info("User clicked on Add Card Button");
+	}
+
+	@Then("a message should be displayed ‘Payment Method added successfully’")
+	public void aMessageShouldBeDisplayedPaymentMethodAddedSuccessfully() {
+		String expectedMessage = "Payment Method added successfully";
+		waitTillPresence(factory.AccountPage().paymentmethodAddedMessage);
+		Assert.assertEquals(expectedMessage, getText(factory.AccountPage().paymentmethodAddedMessage));
+		logger.info("The message 'Payment Method added successfully' is displayed");
+	}
+
+	@When("User click on Card option")
+	public void userClickedOnCard() {
+		click(factory.AccountPage().clickOnCard);
+		logger.info("user clicked on card otion");
+	}
+
+	@And("User click on Edit option of card section")
+	public void userClickOnEditOptionOfCardSection() {
+		click(factory.AccountPage().editCardBtn);
+		logger.info("User clicked on edit option");
+	}
+
+	@And("user edit information with below data")
+	public void userEditInformationWithBelowData(io.cucumber.datatable.DataTable dataTable) {
+		clear(factory.AccountPage().cardNumber);
+		clear(factory.AccountPage().nameOnCard);
+		clear(factory.AccountPage().securityCode);
+		List<Map<String, String>> dat = dataTable.asMaps(String.class, String.class);
+		sendText(factory.AccountPage().cardNumber, dat.get(0).get("cardNumber"));
+		sendText(factory.AccountPage().nameOnCard, dat.get(0).get("nameOnCard"));
+		selectByValue(factory.AccountPage().expirationMonth, dat.get(0).get("expirationMonth"));
+		selectByValue(factory.AccountPage().expirationYear, dat.get(0).get("expirationYear"));
+		sendText(factory.AccountPage().securityCode, dat.get(0).get("securityCode"));
+		logger.info("User has updated Card Information successfully");
+	}
+
+	@And("user click on Update Your Card button")
+	public void userClickOnUpdateYourCardButton() {
+		click(factory.AccountPage().paymentUpdateBtn);
+		waitTillClickable(factory.AccountPage().paymentUpdateBtn);
+		logger.info("User clicked on update button");
+	}
+
+	@Then("a message should be displayed 'Payment Method updated Successfull'")
+	public void paymentMethodUpdatedSuccessfully() {
+		waitTillPresence(factory.AccountPage().paymentMethodUpdatedMessage);
+		Assert.assertTrue(isElementDisplayed(factory.AccountPage().paymentMethodUpdatedMessage));
+		logger.info("Payment Method Updated Message displayed");
+	}
+
+	@And("User click on Card option display")
+	public void userClickOnCardOptionDisplay() {
+		click(factory.AccountPage().clickOnCard);
+		logger.info("user clicked on card otion");
+	}
+
+	@And("User click on remove option of card section")
+	public void userClickOnRemoveOption() {
+		click(factory.AccountPage().removeOption);
+		logger.info("User clicked on remove option");
+	}
+
+	@Then("payment details should be removed")
+	public void userClickOnCardOption() {
+		waitTillPresence(factory.AccountPage().newPaymentPageComes);
+		Assert.assertTrue(isElementDisplayed(factory.AccountPage().newPaymentPageComes));
+		logger.info("user rmoved card information");
+
+	}
+
 }

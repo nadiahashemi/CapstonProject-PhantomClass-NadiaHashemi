@@ -4,6 +4,7 @@
 /Users/mac/eclipse-workspace/tek-bdd-cucumber/src/main/java/tek/sdet/framework/config/ChromeBrowser.java
 /Users/mac/eclipse-workspace/tek-bdd-cucumber/src/main/java/tek/sdet/framework/config/FireFoxBrowser.java
 /Users/mac/eclipse-workspace/tek-bdd-cucumber/src/main/java/tek/sdet/framework/config/EdgeBrowser.java
+/Users/mac/eclipse-workspace/tek-bdd-cucumber/src/main/java/tek/sdet/framework/utilities/DataGeneratorUtility.java
 /Users/mac/eclipse-workspace/tek-bdd-cucumber/src/main/java/tek/sdet/framework/base/BaseSetup.java
 /Users/mac/eclipse-workspace/tek-bdd-cucumber/src/main/java/tek/sdet/framework/config/ChromeHeadless.java
 /Users/mac/eclipse-workspace/tek-bdd-cucumber/src/main/java/tek/sdet/framework/config/Browser.java
