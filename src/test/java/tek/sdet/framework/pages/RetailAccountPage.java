@@ -67,4 +67,23 @@ public class RetailAccountPage extends BaseSetup {
 
 	@FindBy(xpath = "//div[contains(text(),'Payment Method added sucessfully')]")
 	public WebElement paymentmethodAddedMessage;
+	
+	@FindBy(xpath = "//div[@data-id='4688']")
+	public WebElement clickOnCard;
+	
+	@FindBy(xpath = "//button[contains (text(),'Edit')]")
+	public WebElement editCardBtn;
+	
+	@FindBy(id = "//button[@id='paymentSubmitBtn' and '1']")
+	public WebElement paymentUpdateBtn;
+	
+	@FindBy(xpath = "//div[contains(text(),'Payment Method updated Successfully')]")
+	public WebElement paymentMethodUpdatedMessage;
+	
+	@FindBy(xpath = "//button[contains(text(),'remove')]")
+	public WebElement removeOption;
+	
+	@FindBy(xpath = "//div[@class='account__payment-new']")
+	public WebElement newPaymentPageComes;
+	
 }

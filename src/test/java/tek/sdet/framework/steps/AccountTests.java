@@ -94,4 +94,65 @@ public class AccountTests extends CommonUtility {
 		Assert.assertEquals(expectedMessage, getText(factory.AccountPage().paymentmethodAddedMessage));
 		logger.info("The message 'Payment Method added successfully' is displayed");
 	}
+
+	@When("User click on Card option")
+	public void userClickedOnCard() {
+		click(factory.AccountPage().clickOnCard);
+		logger.info("user clicked on card otion");
+	}
+
+	@And("User click on Edit option of card section")
+	public void userClickOnEditOptionOfCardSection() {
+		click(factory.AccountPage().editCardBtn);
+		logger.info("User clicked on edit option");
+	}
+
+	@And("user edit information with below data")
+	public void userEditInformationWithBelowData(io.cucumber.datatable.DataTable dataTable) {
+		clear(factory.AccountPage().cardNumber);
+		clear(factory.AccountPage().nameOnCard);
+		clear(factory.AccountPage().securityCode);
+		List<Map<String, String>> dat = dataTable.asMaps(String.class, String.class);
+		sendText(factory.AccountPage().cardNumber, dat.get(0).get("cardNumber"));
+		sendText(factory.AccountPage().nameOnCard, dat.get(0).get("nameOnCard"));
+		selectByValue(factory.AccountPage().expirationMonth, dat.get(0).get("expirationMonth"));
+		selectByValue(factory.AccountPage().expirationYear, dat.get(0).get("expirationYear"));
+		sendText(factory.AccountPage().securityCode, dat.get(0).get("securityCode"));
+		logger.info("User has updated Card Information successfully");
+	}
+
+	@And("user click on Update Your Card button")
+	public void userClickOnUpdateYourCardButton() {
+		click(factory.AccountPage().paymentUpdateBtn);
+		waitTillClickable(factory.AccountPage().paymentUpdateBtn);
+		logger.info("User clicked on update button");
+	}
+
+	@Then("a message should be displayed 'Payment Method updated Successfull'")
+	public void paymentMethodUpdatedSuccessfully() {
+		waitTillPresence(factory.AccountPage().paymentMethodUpdatedMessage);
+		Assert.assertTrue(isElementDisplayed(factory.AccountPage().paymentMethodUpdatedMessage));
+		logger.info("Payment Method Updated Message displayed");
+	}
+
+	@And("User click on Card option display")
+	public void userClickOnCardOptionDisplay() {
+		click(factory.AccountPage().clickOnCard);
+		logger.info("user clicked on card otion");
+	}
+
+	@And("User click on remove option of card section")
+	public void userClickOnRemoveOption() {
+		click(factory.AccountPage().removeOption);
+		logger.info("User clicked on remove option");
+	}
+
+	@Then("payment details should be removed")
+	public void userClickOnCardOption() {
+		waitTillPresence(factory.AccountPage().newPaymentPageComes);
+		Assert.assertTrue(isElementDisplayed(factory.AccountPage().newPaymentPageComes));
+		logger.info("user rmoved card information");
+
+	}
+
 }

@@ -29,7 +29,25 @@ Feature: Retail Account page
     When User click on Account option
     And User click on Add a payment method link
     And User fill Debit or credit card information
-      | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 0123456788111013 | Jackmanaanaaaai       |               3 |           2027 |          969 |
+      | cardNumber       | nameOnCard      | expirationMonth | expirationYear | securityCode |
+      | 0123456788111013 | Jackmanaanaaaai |               3 |           2027 |          969 |
     And User click on Add your card button
     Then a message should be displayed ‘Payment Method added successfully’
+
+  @card
+  Scenario: Verify User can edit Debit or Credit card
+    When User click on Account option
+    And User click on Card option
+    And User click on Edit option of card section
+    And user edit information with below data
+      | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
+      | 0829637829301674 | Jack       |               4 |           2029 |          962 |
+    And user click on Update Your Card button
+    Then a message should be displayed 'Payment Method updated Successfully'
+
+  @removeCard
+  Scenario: Verify User can remove Debit or Credit card
+    When User click on Account option
+    And User click on Card option display
+    And User click on remove option of card section
+    Then payment details should be removed

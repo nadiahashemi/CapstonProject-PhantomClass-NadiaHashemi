@@ -395,3 +395,163 @@
 2023-03-12 22:42:06,760 [main] INFO logger_File - user clicked on add payment method
 2023-03-12 22:42:08,050 [main] INFO logger_File - User entred card information
 2023-03-12 22:42:08,227 [main] INFO logger_File - User clicked on Add Card Button
+2023-03-26 13:15:13,789 [main] INFO logger_File - user is on retail website
+2023-03-26 13:15:13,857 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-26 13:15:14,589 [main] INFO logger_File - user clicked on sign in button
+2023-03-26 13:15:15,192 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@12345
+2023-03-26 13:15:15,605 [main] INFO logger_File - user clicked on login button
+2023-03-26 13:15:16,413 [main] INFO logger_File - User clicked on account option
+2023-03-26 13:15:16,885 [main] INFO logger_File - User clicked on edit option
+2023-03-26 13:25:27,725 [main] INFO logger_File - user is on retail website
+2023-03-26 13:25:27,749 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-26 13:25:28,568 [main] INFO logger_File - user clicked on sign in button
+2023-03-26 13:25:29,072 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@12345
+2023-03-26 13:25:29,439 [main] INFO logger_File - user clicked on login button
+2023-03-26 13:25:30,318 [main] INFO logger_File - User clicked on account option
+2023-03-26 13:25:30,915 [main] INFO logger_File - User clicked on edit option
+2023-03-26 13:26:17,513 [main] INFO logger_File - user is on retail website
+2023-03-26 13:26:17,559 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-26 13:26:18,359 [main] INFO logger_File - user clicked on sign in button
+2023-03-26 13:26:18,978 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@12345
+2023-03-26 13:26:19,376 [main] INFO logger_File - user clicked on login button
+2023-03-26 13:26:20,125 [main] INFO logger_File - User clicked on account option
+2023-03-26 13:26:20,466 [main] INFO logger_File - User clicked on edit option
+2023-03-26 13:36:05,805 [main] INFO logger_File - user is on retail website
+2023-03-26 13:36:05,841 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-26 13:36:06,733 [main] INFO logger_File - user clicked on sign in button
+2023-03-26 13:36:07,624 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@12345
+2023-03-26 13:36:08,089 [main] INFO logger_File - user clicked on login button
+2023-03-26 13:36:09,175 [main] INFO logger_File - User clicked on account option
+2023-03-26 13:36:09,781 [main] INFO logger_File - User clicked on edit option
+2023-03-26 13:41:59,085 [main] INFO logger_File - user is on retail website
+2023-03-26 13:41:59,102 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-26 13:42:00,406 [main] INFO logger_File - user clicked on sign in button
+2023-03-26 13:42:01,831 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@12345
+2023-03-26 13:42:02,374 [main] INFO logger_File - user clicked on login button
+2023-03-26 13:42:03,397 [main] INFO logger_File - User clicked on account option
+2023-03-26 13:53:04,367 [main] INFO logger_File - user is on retail website
+2023-03-26 13:53:04,383 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-26 13:53:05,024 [main] INFO logger_File - user clicked on sign in button
+2023-03-26 13:53:05,723 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@12345
+2023-03-26 13:53:06,181 [main] INFO logger_File - user clicked on login button
+2023-03-26 13:53:07,272 [main] INFO logger_File - User clicked on account option
+2023-03-26 13:53:07,743 [main] INFO logger_File - user clicked on card otion
+2023-03-26 13:53:08,102 [main] INFO logger_File - User clicked on edit option
+2023-03-26 13:53:09,528 [main] INFO logger_File - User has updated Card Information successfully
+2023-03-26 13:57:14,384 [main] INFO logger_File - user is on retail website
+2023-03-26 13:57:14,490 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-26 13:57:15,441 [main] INFO logger_File - user clicked on sign in button
+2023-03-26 13:57:16,425 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@12345
+2023-03-26 13:57:16,841 [main] INFO logger_File - user clicked on login button
+2023-03-26 13:57:17,568 [main] INFO logger_File - User clicked on account option
+2023-03-26 13:57:17,971 [main] INFO logger_File - user clicked on card otion
+2023-03-26 13:57:18,426 [main] INFO logger_File - User clicked on edit option
+2023-03-26 13:57:20,441 [main] INFO logger_File - User has updated Card Information successfully
+2023-03-26 14:16:02,088 [main] INFO logger_File - user is on retail website
+2023-03-26 14:16:02,114 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-26 14:16:03,332 [main] INFO logger_File - user clicked on sign in button
+2023-03-26 14:16:05,157 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@12345
+2023-03-26 14:16:06,468 [main] INFO logger_File - user clicked on login button
+2023-03-26 14:16:07,603 [main] INFO logger_File - User clicked on account option
+2023-03-26 14:16:08,323 [main] INFO logger_File - user clicked on card otion
+2023-03-26 14:16:08,837 [main] INFO logger_File - User clicked on edit option
+2023-03-26 14:16:11,023 [main] INFO logger_File - User has updated Card Information successfully
+2023-03-26 14:19:38,210 [main] INFO logger_File - user is on retail website
+2023-03-26 14:19:38,226 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-26 14:19:38,911 [main] INFO logger_File - user clicked on sign in button
+2023-03-26 14:19:39,466 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@12345
+2023-03-26 14:19:39,979 [main] INFO logger_File - user clicked on login button
+2023-03-26 14:19:40,893 [main] INFO logger_File - User clicked on account option
+2023-03-26 14:19:41,229 [main] INFO logger_File - user clicked on card otion
+2023-03-26 14:19:41,576 [main] INFO logger_File - User clicked on edit option
+2023-03-26 14:19:43,633 [main] INFO logger_File - User has updated Card Information successfully
+2023-03-26 14:23:01,109 [main] INFO logger_File - user is on retail website
+2023-03-26 14:23:01,139 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-26 14:23:02,077 [main] INFO logger_File - user clicked on sign in button
+2023-03-26 14:23:02,799 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@12345
+2023-03-26 14:23:03,230 [main] INFO logger_File - user clicked on login button
+2023-03-26 14:23:04,102 [main] INFO logger_File - User clicked on account option
+2023-03-26 14:23:04,563 [main] INFO logger_File - user clicked on card otion
+2023-03-26 14:23:04,930 [main] INFO logger_File - User clicked on edit option
+2023-03-26 14:23:07,366 [main] INFO logger_File - User has updated Card Information successfully
+2023-03-26 14:27:41,443 [main] INFO logger_File - user is on retail website
+2023-03-26 14:27:41,468 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-26 14:27:42,242 [main] INFO logger_File - user clicked on sign in button
+2023-03-26 14:27:42,834 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@12345
+2023-03-26 14:27:43,244 [main] INFO logger_File - user clicked on login button
+2023-03-26 14:27:44,076 [main] INFO logger_File - User clicked on account option
+2023-03-26 14:27:44,472 [main] INFO logger_File - user clicked on card otion
+2023-03-26 14:27:44,974 [main] INFO logger_File - User clicked on edit option
+2023-03-26 14:27:46,414 [main] INFO logger_File - User has updated Card Information successfully
+2023-03-26 14:43:21,985 [main] INFO logger_File - user is on retail website
+2023-03-26 14:43:22,024 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-26 14:43:22,905 [main] INFO logger_File - user clicked on sign in button
+2023-03-26 14:43:23,500 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@12345
+2023-03-26 14:43:23,876 [main] INFO logger_File - user clicked on login button
+2023-03-26 14:43:24,639 [main] INFO logger_File - User clicked on account option
+2023-03-26 14:43:25,607 [main] INFO logger_File - user clicked on card otion
+2023-03-26 14:43:26,025 [main] INFO logger_File - User clicked on edit option
+2023-03-26 14:43:27,312 [main] INFO logger_File - User has updated Card Information successfully
+2023-03-26 14:44:18,702 [main] INFO logger_File - user is on retail website
+2023-03-26 14:44:18,712 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-26 14:44:19,614 [main] INFO logger_File - user clicked on sign in button
+2023-03-26 14:44:20,157 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@12345
+2023-03-26 14:44:20,656 [main] INFO logger_File - user clicked on login button
+2023-03-26 14:44:21,487 [main] INFO logger_File - User clicked on account option
+2023-03-26 14:44:21,887 [main] INFO logger_File - user clicked on card otion
+2023-03-26 14:44:22,208 [main] INFO logger_File - User clicked on edit option
+2023-03-26 14:44:23,931 [main] INFO logger_File - User has updated Card Information successfully
+2023-03-26 14:48:16,146 [main] INFO logger_File - user is on retail website
+2023-03-26 14:48:16,158 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-26 14:48:17,010 [main] INFO logger_File - user clicked on sign in button
+2023-03-26 14:48:17,626 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@12345
+2023-03-26 14:48:18,085 [main] INFO logger_File - user clicked on login button
+2023-03-26 14:48:18,885 [main] INFO logger_File - User clicked on account option
+2023-03-26 14:48:19,338 [main] INFO logger_File - user clicked on card otion
+2023-03-26 14:48:19,957 [main] INFO logger_File - User clicked on edit option
+2023-03-26 14:48:21,495 [main] INFO logger_File - User has updated Card Information successfully
+2023-03-26 14:57:06,392 [main] INFO logger_File - user is on retail website
+2023-03-26 14:57:06,459 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-26 14:57:07,358 [main] INFO logger_File - user clicked on sign in button
+2023-03-26 14:57:08,078 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@12345
+2023-03-26 14:57:08,525 [main] INFO logger_File - user clicked on login button
+2023-03-26 14:57:09,228 [main] INFO logger_File - User clicked on account option
+2023-03-26 14:57:09,836 [main] INFO logger_File - user clicked on card otion
+2023-03-26 14:57:10,304 [main] INFO logger_File - User clicked on edit option
+2023-03-26 14:57:11,879 [main] INFO logger_File - User has updated Card Information successfully
+2023-03-26 14:59:27,835 [main] INFO logger_File - user is on retail website
+2023-03-26 14:59:27,925 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-26 14:59:28,766 [main] INFO logger_File - user clicked on sign in button
+2023-03-26 14:59:29,246 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@12345
+2023-03-26 14:59:29,751 [main] INFO logger_File - user clicked on login button
+2023-03-26 14:59:30,532 [main] INFO logger_File - User clicked on account option
+2023-03-26 14:59:31,170 [main] INFO logger_File - user clicked on card otion
+2023-03-26 14:59:31,703 [main] INFO logger_File - User clicked on edit option
+2023-03-26 14:59:33,447 [main] INFO logger_File - User has updated Card Information successfully
+2023-03-27 19:03:30,794 [main] INFO logger_File - user is on retail website
+2023-03-27 19:03:30,810 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-27 19:03:31,907 [main] INFO logger_File - user clicked on sign in button
+2023-03-27 19:03:32,934 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@12345
+2023-03-27 19:03:33,338 [main] INFO logger_File - user clicked on login button
+2023-03-27 19:03:34,283 [main] INFO logger_File - User clicked on account option
+2023-03-27 19:03:34,907 [main] INFO logger_File - user clicked on card otion
+2023-03-27 19:03:35,521 [main] INFO logger_File - User clicked on edit option
+2023-03-27 19:03:37,471 [main] INFO logger_File - User has updated Card Information successfully
+2023-03-27 19:11:25,654 [main] INFO logger_File - user is on retail website
+2023-03-27 19:11:25,684 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-03-27 19:11:26,662 [main] INFO logger_File - user clicked on sign in button
+2023-03-27 19:11:27,661 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@12345
+2023-03-27 19:11:28,134 [main] INFO logger_File - user clicked on login button
+2023-03-27 19:11:29,128 [main] INFO logger_File - User clicked on account option
+2023-03-27 19:11:29,431 [main] INFO logger_File - user clicked on card otion
+2023-03-27 19:11:29,797 [main] INFO logger_File - User clicked on edit option
+2023-03-27 19:11:32,198 [main] INFO logger_File - User has updated Card Information successfully
+2023-04-02 04:24:31,334 [main] INFO logger_File - user is on retail website
+2023-04-02 04:24:31,346 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-04-02 04:24:32,477 [main] INFO logger_File - user clicked on sign in button
+2023-04-02 04:24:32,896 [main] INFO logger_File - user entered email nadihashemih@gmail.com and password Nadih@12345
+2023-04-02 04:24:33,310 [main] INFO logger_File - user clicked on login button
+2023-04-02 04:24:33,964 [main] INFO logger_File - User clicked on account option
+2023-04-02 04:24:34,275 [main] INFO logger_File - user clicked on card otion
+2023-04-02 04:24:34,699 [main] INFO logger_File - User clicked on remove option
+2023-04-02 04:24:34,885 [main] INFO logger_File - user rmoved card information
