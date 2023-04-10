@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -59,9 +61,10 @@ public class AccountTests extends CommonUtility {
 
 	@Then("a message should be displayed {string}")
 	public void aMessageShouldBeDisplayed(String string) {
-		waitTillPresence(factory.AccountPage().passUpdatedSuccessfully);
-		Assert.assertTrue(isElementDisplayed(factory.AccountPage().passUpdatedSuccessfully));
-		logger.info("A successfully updated password message is displayed");
+		WebElement element = getDriver().findElement(By.xpath("//div[text()='" + string + "']"));
+		waitTillPresence(element);
+		Assert.assertTrue(element.isDisplayed());
+		logger.info("A successfully message is displayed");
 	}
 
 	@And("User click on Add a payment method link")
@@ -87,8 +90,8 @@ public class AccountTests extends CommonUtility {
 		logger.info("User clicked on Add Card Button");
 	}
 
-	@Then("a message should be displayed ‘Payment Method added successfully’")
-	public void aMessageShouldBeDisplayedPaymentMethodAddedSuccessfully() {
+	@Then("a message should be display ‘Payment Method added successfully’")
+	public void aMessageShouldBeDisplayPaymentMethodAddedSuccessfully() {
 		String expectedMessage = "Payment Method added successfully";
 		waitTillPresence(factory.AccountPage().paymentmethodAddedMessage);
 		Assert.assertEquals(expectedMessage, getText(factory.AccountPage().paymentmethodAddedMessage));
@@ -97,7 +100,7 @@ public class AccountTests extends CommonUtility {
 
 	@When("User click on Card option")
 	public void userClickedOnCard() {
-		click(factory.AccountPage().clickOnCard);
+		click(factory.AccountPage().Cardoption);
 		logger.info("user clicked on card otion");
 	}
 
@@ -124,20 +127,12 @@ public class AccountTests extends CommonUtility {
 	@And("user click on Update Your Card button")
 	public void userClickOnUpdateYourCardButton() {
 		click(factory.AccountPage().paymentUpdateBtn);
-		waitTillClickable(factory.AccountPage().paymentUpdateBtn);
 		logger.info("User clicked on update button");
-	}
-
-	@Then("a message should be displayed 'Payment Method updated Successfull'")
-	public void paymentMethodUpdatedSuccessfully() {
-		waitTillPresence(factory.AccountPage().paymentMethodUpdatedMessage);
-		Assert.assertTrue(isElementDisplayed(factory.AccountPage().paymentMethodUpdatedMessage));
-		logger.info("Payment Method Updated Message displayed");
 	}
 
 	@And("User click on Card option display")
 	public void userClickOnCardOptionDisplay() {
-		click(factory.AccountPage().clickOnCard);
+		click(factory.AccountPage().Cardoption);
 		logger.info("user clicked on card otion");
 	}
 
@@ -145,13 +140,96 @@ public class AccountTests extends CommonUtility {
 	public void userClickOnRemoveOption() {
 		click(factory.AccountPage().removeOption);
 		logger.info("User clicked on remove option");
+
 	}
 
-	@Then("payment details should be removed")
-	public void userClickOnCardOption() {
-		waitTillPresence(factory.AccountPage().newPaymentPageComes);
-		Assert.assertTrue(isElementDisplayed(factory.AccountPage().newPaymentPageComes));
-		logger.info("user rmoved card information");
+	@When("User click on Add address option")
+	public void userClickOnAddAddressOption() {
+		click(factory.AccountPage().addAddressOption);
+		logger.info("User clicked on address option");
+	}
+
+	@And("user fill new address form with below information")
+	public void userFillNewAddressFormWithBelowInformation(io.cucumber.datatable.DataTable dataTable) {
+		List<Map<String, String>> addressInfo = dataTable.asMaps(String.class, String.class);
+		selectByValue(factory.AccountPage().countryOption, addressInfo.get(0).get("country"));
+		sendText(factory.AccountPage().name_Address_Input, addressInfo.get(0).get("fullName"));
+		sendText(factory.AccountPage().phone_Number_input, addressInfo.get(0).get("phoneNumber"));
+		sendText(factory.AccountPage().street_input, addressInfo.get(0).get("streetAddress"));
+		sendText(factory.AccountPage().apartment_input, addressInfo.get(0).get("apt"));
+		sendText(factory.AccountPage().city_input, addressInfo.get(0).get("city"));
+		selectByValue(factory.AccountPage().state, addressInfo.get(0).get("state"));
+		String expectedzipCode = "M1B3L9";
+		String acceptedZipcode = "12345";
+		Assert.assertTrue(isElementDisplayed(factory.AccountPage().zip_Code));
+		Assert.assertEquals(expectedzipCode, acceptedZipcode);
+		logger.info("User enter completed information");
+		logger.info("Actual zip code" + acceptedZipcode + "Equals" + "Expected zip code for Canada" + expectedzipCode);
+
+	}
+
+	@And("User click Add Your Address button")
+	public void userClickAddYourAddressButton() {
+		click(factory.AccountPage().address_Btn);
+		logger.info("user clicked on add address button");
+
+	}
+
+	@Then("a message should be displayed ‘Address Added Successfully’")
+	public void aMessageShouldBeDisplayedAddressAddedSuccessfully() {
+		waitTillPresence(factory.AccountPage().address_addedMessage);
+		Assert.assertTrue(isElementDisplayed(factory.AccountPage().address_addedMessage));
+	}
+
+	@When("User click on edit address option")
+	public void userClickOnEditAddressOption() {
+		click(factory.AccountPage().edit_button);
+		logger.info("user clicked on edit button");
+	}
+
+	@When("user update address form with below information")
+	public void userUpdateAddressFormWithBelowInformation(io.cucumber.datatable.DataTable dataTable) {
+
+		clear(factory.AccountPage().name_Address_Input);
+		clear(factory.AccountPage().phone_Number_input);
+		clear(factory.AccountPage().street_input);
+		clear(factory.AccountPage().apartment_input);
+		clear(factory.AccountPage().city_input);
+		clear(factory.AccountPage().zip_Code);
+		List<Map<String, String>> update = dataTable.asMaps(String.class, String.class);
+		selectByValue(factory.AccountPage().countryOption, update.get(0).get("country"));
+		sendText(factory.AccountPage().name_Address_Input, update.get(0).get("fullName"));
+		sendText(factory.AccountPage().phone_Number_input, update.get(0).get("phoneNumber"));
+		sendText(factory.AccountPage().street_input, update.get(0).get("streetAddress"));
+		sendText(factory.AccountPage().apartment_input, update.get(0).get("apt"));
+		sendText(factory.AccountPage().city_input, update.get(0).get("city"));
+		selectByValue(factory.AccountPage().state, update.get(0).get("state"));
+		sendText(factory.AccountPage().zip_Code, update.get(0).get("zipCode"));
+		logger.info("User enter completed information");
+	}
+
+	@And("User click update Your Address button")
+	public void userClickUpdateYourAddressButton() {
+		click(factory.AccountPage().address_updateBtn);
+		logger.info("user clicked on update button");
+
+	}
+
+	@Then("a message should be displayed ‘Address Updated Successfully’")
+	public void aMessageShouldBeDisplayedAddressUpdatedSuccessfully() {
+		Assert.assertTrue(isElementDisplayed(factory.AccountPage().address_updatedMessage));
+
+	}
+
+	@When("User click on remove option of Address section")
+	public void userClickOnRemoveOptionOfAddressSection() {
+		click(factory.AccountPage().remove_Btn);
+		logger.info("user click on reove button");
+	}
+
+	@Then("Address details should be removed")
+	public void addressDetailsShouldBeRemoved() {
+		Assert.assertTrue(isElementDisplayed(factory.AccountPage().addAddressOption));
 
 	}
 

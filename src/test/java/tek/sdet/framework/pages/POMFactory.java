@@ -3,20 +3,22 @@ package tek.sdet.framework.pages;
 import tek.sdet.framework.base.BaseSetup;
 
 public class POMFactory extends BaseSetup {
-	private RetailHomePage homePage;
+	private RetailHomePage HomePage;
 	private RetailSignInPage signInPage;
 	private RetailAccountPage Accountpage;
-	private RetailOrdersPage orderPage;
+	private RetailOrderPage orderPage;
+	private RetailPage retailPage;
 	
 	public POMFactory() {
-	this.homePage = new RetailHomePage();	
+	this.HomePage = new RetailHomePage();	
 	this.signInPage = new RetailSignInPage();
 	this.Accountpage = new RetailAccountPage();
-	this.orderPage = new RetailOrdersPage();
+	this.orderPage = new RetailOrderPage();
+	this.retailPage = new RetailPage();
 	}
 	
 	public RetailHomePage homePage() {
-		return this.homePage;
+		return this.HomePage;
 	}
 	
 	public RetailSignInPage signInPage() {
@@ -25,9 +27,11 @@ public class POMFactory extends BaseSetup {
 	public RetailAccountPage AccountPage() {
 		return this.Accountpage;
 	}
-	public RetailOrdersPage orderPage() {
-		
+	public RetailOrderPage orderPage() {
 		return this.orderPage;
+	}
+	public RetailPage retailPage() {
+		return this.retailPage;
 	}
 
 }

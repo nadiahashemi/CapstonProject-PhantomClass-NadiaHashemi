@@ -10,66 +10,109 @@ import tek.sdet.framework.base.BaseSetup;
 
 public class RetailHomePage extends BaseSetup {
 	
+	
 	public RetailHomePage() {
 		PageFactory.initElements(getDriver(), this);
 	}
 	
-	// syntax for finding UI elements and storing them in POM classes 
-	/**
-	 * @FindBy(locatorType = "value")
-	 * public WebElement nameOfElement
-	 */
-	
-	@FindBy(xpath="//a[text()='TEKSCHOOL']")
-	public WebElement tekSchoolLogo;
-	
-	@FindBy(id ="search")
-	public WebElement allDepartmentDropDown;
-	
-	@FindBy(css = "#searchInput")
-	public WebElement searchBar;
-	
-	@FindBy(xpath = "//button[@id='searchBtn']")
-	public WebElement searchButton; 
-	
-	@FindBy(linkText = "Sign in")
-	public WebElement signInButton;
-	
-	@FindBy(id="cartBtn")
-	public WebElement cartButton;
-	
-	@FindBy(xpath ="//img[contains(@alt, 'Pokemon')]")
-	public WebElement pokemanProductImage;
-	
-	@FindBy(xpath ="//a[text()='Account']")
-	public WebElement accountOption;
-	
+	//Store elements below: 
+
 	@FindBy(id = "hamburgerBtn")
-	public WebElement allIcon;
+	public WebElement all_section;
+	
+	@FindBy(xpath = "//span[contains(text(),'Electronics')]")
+	public WebElement electronics;
+	
+	@FindBy(xpath = "//select[@id='search']")
+	public WebElement allDepartment;
 	
 	@FindBy(xpath ="//div[@class='sidebar_content-item']/span")
 	public List<WebElement> sideBarElements;
 	
-	@FindBy(xpath = "//span[text()='Electronics']")
-	public WebElement electronicsSideBar;
+	@FindBy(id = "searchInput")
+	public WebElement seachInput;
 	
-	@FindBy(xpath ="//span[text()='Computers']")
-	public WebElement computersSideBar;
+	@FindBy(id = "searchBtn")
+	public WebElement searchIcon;
 	
-	@FindBy(xpath="//span[text()='Smart Home']")
-	public WebElement smartHomeSideBar;
+	@FindBy(xpath = "//img[@class='image']")
+	public WebElement kasaItem;
 	
-	@FindBy(xpath ="//span[text()='Sports']")
-	public WebElement sportsSideBar;
+	@FindBy(xpath = "//select[@class='product__select']")
+	public WebElement quantity;
 	
-	@FindBy(xpath ="//span[text()='Automative']")
-	public WebElement automativeSideBar;
+	@FindBy(xpath = "//button[@id='addToCartBtn']")
+	public WebElement addtoCardBtn;
 	
-	@FindBy(xpath ="//div[@class='sidebar_content-item']/span")
-	public List<WebElement> sideBarOptionElements;
-	
-	
-	
-	
+	@FindBy(xpath = "//span[@id='cartQuantity']")
+	public WebElement itemQuantity;
 
+	@FindBy(xpath = "//div[@id='cartBtn']/p")
+	public WebElement cartBtn;
+	
+	@FindBy(css = "#proceedBtn")
+	public WebElement proceedBtn;
+	
+	@FindBy(id = "addPaymentBtn")
+	public WebElement addpaymentBtn;
+	
+	@FindBy(xpath = "//button[@class='checkout__address-btn']")
+	public WebElement addressBtn;
+	
+	@FindBy(id = "countryDropdown")
+	public WebElement country;
+	
+	@FindBy(id = "fullNameInput")
+	public WebElement fullName_Input;
+	
+	@FindBy(id = "phoneNumberInput")
+	public WebElement phoneNumber;
+	
+	@FindBy(id = "streetInput")
+	public WebElement streetInput;
+	
+	@FindBy(id = "apartmentInput")
+	public WebElement apartmentInput;
+	
+	@FindBy(id = "cityInput")
+	public WebElement cityInput;
+	
+	@FindBy(xpath = "//select[@name='state']")
+	public WebElement states;
+	
+	@FindBy(id = "zipCodeInput")
+	public WebElement zipCode;
+	
+	@FindBy(id = "addressBtn")
+	public WebElement addAddressBtn;
+	
+	@FindBy(xpath = "//input[@name='cardNumber']")
+	public WebElement cardnumber;
+	
+	@FindBy(xpath = "//input[@name='nameOnCard']")
+	public WebElement nameOnCardInput;
+	
+	@FindBy(xpath = "//select[@name='expirationYear']")
+	public WebElement expirationyear;
+	
+	@FindBy(xpath = "//select[@name='expirationMonth']")
+	public WebElement expirationMonth;
+	
+	@FindBy(xpath = "//input[@name='securityCode']")
+	public WebElement securitycode;
+	
+	@FindBy(id = "paymentSubmitBtn")
+	public WebElement paymentSubmitButton;
+	
+	@FindBy(id = "placeOrderBtn")
+	public WebElement placeOrderBtn;
+	
+	@FindBy(xpath = "//div[contains(text(),'Order Placed Successfully')]")
+	public WebElement orderSuccessfullyMessage;
+	
+	@FindBy(xpath = "//p[contains(text(),'Order Placed, Thanks')]")
+	public WebElement orderPlacedMessage;
+	
+	@FindBy(xpath = "//p[contains(text(),'Apex Legends - 1,000 Apex Coins')]")
+	public WebElement apexLegends;
 }

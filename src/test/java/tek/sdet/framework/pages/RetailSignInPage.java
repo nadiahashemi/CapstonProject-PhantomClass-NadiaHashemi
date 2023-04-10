@@ -49,5 +49,14 @@ public class RetailSignInPage extends BaseSetup {
 
 	@FindBy(xpath = "//button[text()='Sign Up']")
 	public WebElement signUpFormButton;
+	
+	@FindBy(linkText = "Sign in")
+	public WebElement signInButton;
+	
+	@FindBy(xpath ="//a[text()='Account']")
+	public WebElement accountOption;
+	
+	@FindBy(xpath = "//img[@id='profileImage']")
+	public WebElement profileImg;
 
 }
