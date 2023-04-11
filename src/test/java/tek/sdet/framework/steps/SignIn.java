@@ -18,7 +18,7 @@ public class SignIn extends CommonUtility {
 
 	@When("User click on Sign in option")
 	public void userClickOnSigninOption() {
-		click(factory.homePage().signInButton);
+		click(factory.signInPage().signInButton);
 		logger.info("user clicked on sign in button");
 	}
 	@When("User enter email {string} and password {string}")
@@ -36,7 +36,7 @@ public class SignIn extends CommonUtility {
 	}
 	@Then("User should be logged in into Account")
 	public void userShouldBeLoggedInIntoAccount() {
-	Assert.assertTrue(isElementDisplayed(factory.homePage().accountOption));	
+	Assert.assertTrue(isElementDisplayed(factory.signInPage().accountOption));	
 	  
 	}
 	@When("User click on Create New Account button")
@@ -61,8 +61,8 @@ public class SignIn extends CommonUtility {
 	}
 	@Then("User should be logged into account page")
 	public void userShouldBeLoggedIntoAccountPage() {
-		waitTillPresence(factory.AccountPage().profileImg);
-		Assert.assertTrue(isElementDisplayed(factory.AccountPage().profileImg));
+		waitTillPresence(factory.signInPage().profileImg);
+		Assert.assertTrue(isElementDisplayed(factory.signInPage().profileImg));
 		logger.info("user logged into account");
 	  
 	}
