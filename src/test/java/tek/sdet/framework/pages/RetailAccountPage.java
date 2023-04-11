@@ -11,8 +11,6 @@ public class RetailAccountPage extends BaseSetup {
 		PageFactory.initElements(getDriver(), this);
 	}
 
-	@FindBy(xpath = "//img[@id='profileImage']")
-	public WebElement profileImg;
 
 	@FindBy(xpath = "//a[@id='accountLink']")
 	public WebElement accountBtn;
@@ -53,7 +51,7 @@ public class RetailAccountPage extends BaseSetup {
 	@FindBy(xpath = "//input[@name='nameOnCard']")
 	public WebElement nameOnCard;
 
-	@FindBy(xpath = "//select[@name='expirationMonth']")
+	@FindBy(id = "expirationMonthInput")
 	public WebElement expirationMonth;
 
 	@FindBy(xpath = "//select[@name='expirationYear']")
@@ -67,23 +65,67 @@ public class RetailAccountPage extends BaseSetup {
 
 	@FindBy(xpath = "//div[contains(text(),'Payment Method added sucessfully')]")
 	public WebElement paymentmethodAddedMessage;
-	
-	@FindBy(xpath = "//div[@data-id='4688']")
-	public WebElement clickOnCard;
-	
+
+	@FindBy(xpath = "//p[@class='account__payment__sub-text']")
+	public WebElement Cardoption;
+
 	@FindBy(xpath = "//button[contains (text(),'Edit')]")
 	public WebElement editCardBtn;
-	
-	@FindBy(id = "//button[@id='paymentSubmitBtn' and '1']")
+
+	@FindBy(xpath = "//button[text()='Update Your Card']")
 	public WebElement paymentUpdateBtn;
-	
+
 	@FindBy(xpath = "//div[contains(text(),'Payment Method updated Successfully')]")
 	public WebElement paymentMethodUpdatedMessage;
-	
+
 	@FindBy(xpath = "//button[contains(text(),'remove')]")
 	public WebElement removeOption;
-	
+
 	@FindBy(xpath = "//div[@class='account__payment-new']")
 	public WebElement newPaymentPageComes;
+
+	@FindBy(xpath = "//div[@class='account__address-new']")
+	public WebElement addAddressOption;
+
+	@FindBy(id = "countryDropdown")
+	public WebElement countryOption;
+
+	@FindBy(id = "fullNameInput")
+	public WebElement name_Address_Input;
+
+	@FindBy(id = "phoneNumberInput")
+	public WebElement phone_Number_input;
+
+	@FindBy(id = "streetInput")
+	public WebElement street_input;
+
+	@FindBy(id = "apartmentInput")
+	public WebElement apartment_input;
+
+	@FindBy(id = "cityInput")
+	public WebElement city_input;
+
+	@FindBy(xpath = "//select[@name='state']")
+	public WebElement state;
+
+	@FindBy(id = "zipCodeInput")
+	public WebElement zip_Code;
+
+	@FindBy(id = "addressBtn")
+	public WebElement address_Btn;
+
+	@FindBy(xpath = "//div[contains(text(),'Address Added Successfully')]")
+	public WebElement address_addedMessage;
+
+	@FindBy(xpath = "//button[@class='account__address-btn'and 'Edit']")
+	public WebElement edit_button;
 	
+	@FindBy(id = "addressBtn")
+	public WebElement address_updateBtn;
+	
+	@FindBy(xpath = "//div[contains(text(),'Address Updated Successfully')]")
+	public WebElement address_updatedMessage;
+	
+	@FindBy(xpath = "//button[contains(text(),'Remove')]")
+	public WebElement remove_Btn;
 }

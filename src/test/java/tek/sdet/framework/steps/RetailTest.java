@@ -13,7 +13,7 @@ import io.cucumber.java.en.When;
 import tek.sdet.framework.pages.POMFactory;
 import tek.sdet.framework.utilities.CommonUtility;
 
-public class RetailSteps extends CommonUtility {
+public class RetailTest extends CommonUtility {
 
 	private POMFactory factory = new POMFactory();
 	// create object Retailapage
@@ -24,7 +24,7 @@ public class RetailSteps extends CommonUtility {
 		String actualTitle = getTitle();
 		String expectedTitle = "React App";
 		Assert.assertEquals(actualTitle, expectedTitle);
-		Assert.assertTrue(isElementDisplayed(factory.homePage().tekSchoolLogo));
+		Assert.assertTrue(isElementDisplayed(factory.retailPage().tekSchoolLogo));
 		logger.info("user is on retail website");
 		logger.info("Actual Title " + actualTitle + " Equals " + " ExpectedTitle " + expectedTitle);
 
@@ -32,14 +32,14 @@ public class RetailSteps extends CommonUtility {
 
 	@When("User search for {string} product")
 	public void userSearchForProduct(String productValue) {
-		sendText(factory.homePage().searchBar, productValue);
-		click(factory.homePage().searchButton);
+		sendText(factory.retailPage().pokemanProductImage, productValue);
+		click(factory.retailPage().searchButton);
 		logger.info("user searched for product " + productValue);
 	}
 
 	@Then("The product should be displayed")
 	public void theProductShouldBeDisplayed() {
-		Assert.assertTrue(isElementDisplayed(factory.homePage().pokemanProductImage));
+		Assert.assertTrue(isElementDisplayed(factory.retailPage().pokemanProductImage));
 		logger.info("the Product is displayed on home page");
 
 	}
